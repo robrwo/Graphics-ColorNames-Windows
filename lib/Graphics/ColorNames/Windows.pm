@@ -22,7 +22,7 @@ Microsoft Windows.
 
 L<Graphics::ColorNames>
 
-L<Graphics::ColorNamees::IE>
+L<Graphics::ColorNames::IE>
 
 =cut
 
