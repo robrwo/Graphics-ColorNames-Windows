@@ -4,6 +4,8 @@ use v5.6;
 
 # ABSTRACT: Windows color names and equivalent RGB values
 
+# RECOMMEND PREREQ: Graphics::ColorNames
+
 =head1 SYNOPSIS
 
   require Graphics::ColorNames::Windows;
