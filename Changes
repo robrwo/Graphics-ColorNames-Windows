@@ -1,0 +1,8 @@
+Revision history for Graphics-ColorNames-Windows:
+
+{{$NEXT}}
+  [Incompatabilities]
+  - Split into separate distribution from Graphics-ColorNames
+
+  [Documentation]
+  - Update SEE ALSO section.
