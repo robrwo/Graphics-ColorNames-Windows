@@ -1,5 +1,7 @@
 package Graphics::ColorNames::Windows;
 
+use v5.6;
+
 # ABSTRACT: Windows color names and equivalent RGB values
 
 =head1 SYNOPSIS

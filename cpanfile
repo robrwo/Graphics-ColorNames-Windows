@@ -1,3 +1,4 @@
+requires "perl" => "v5.6.0";
 
 on 'test' => sub {
   requires "File::Spec" => "0";
