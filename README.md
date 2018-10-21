@@ -24,7 +24,7 @@ Microsoft Windows.
 
 [Graphics::ColorNames](https://metacpan.org/pod/Graphics::ColorNames)
 
-[Graphics::ColorNamees::IE](https://metacpan.org/pod/Graphics::ColorNamees::IE)
+[Graphics::ColorNames::IE](https://metacpan.org/pod/Graphics::ColorNames::IE)
 
 # SOURCE
 
