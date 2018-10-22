@@ -5,9 +5,9 @@ use Test::Most;
 use Types::Common::Numeric qw/ IntRange /;
 use Types::Standard qw/ HashRef /;
 
-use Graphics::ColorNames::HTML;
+use Graphics::ColorNames::Windows;
 
-ok my $colors = Graphics::ColorNames::HTML->NamesRgbTable(), 'NamesRgbTable';
+ok my $colors = Graphics::ColorNames::Windows->NamesRgbTable(), 'NamesRgbTable';
 
 my $type = HashRef [ IntRange [ 0, 0xffffff ] ];
 
