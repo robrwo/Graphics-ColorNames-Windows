@@ -4,7 +4,7 @@ Graphics::ColorNames::Windows - Windows color names and equivalent RGB values
 
 # VERSION
 
-version v3.3.0
+version v3.3.1
 
 # SYNOPSIS
 
