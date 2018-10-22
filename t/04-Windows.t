@@ -1,19 +1,27 @@
 #!/usr/bin/perl
 
-use strict;
+use Test::Most;
 
-use Test::More tests => 4;
+use Types::Common::Numeric qw/ IntRange /;
+use Types::Standard qw/ HashRef /;
 
-use_ok( 'Graphics::ColorNames', 1.06, qw( hex2tuple tuple2hex ) );
+use Graphics::ColorNames::HTML;
 
-tie my %colors, 'Graphics::ColorNames', 'Windows';
-ok( tied %colors );
+ok my $colors = Graphics::ColorNames::HTML->NamesRgbTable(), 'NamesRgbTable';
 
-ok( keys %colors == 16 );
+my $type = HashRef [ IntRange [ 0, 0xffffff ] ];
 
-my $count = 0;
-foreach my $name ( keys %colors ) {
-    my @RGB = hex2tuple( $colors{$name} );
-    $count++, if ( tuple2hex(@RGB) eq $colors{$name} );
-}
-ok( $count == keys %colors );
+ok $type->check($colors), 'returns expected type';
+
+cmp_deeply [ keys %$colors ], array_each(
+    code(
+        sub {
+            my ($name) = @_;
+            return ( $name eq lc($name) ) &&
+                ( $name !~ m/\W/ )
+        }
+    )
+  ),
+  'normalized names';
+
+done_testing;
