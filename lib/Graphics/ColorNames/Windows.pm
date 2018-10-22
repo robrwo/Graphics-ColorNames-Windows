@@ -29,7 +29,7 @@ L<Graphics::ColorNames::IE>
 use strict;
 use warnings;
 
-our $VERSION = 'v3.3.1';
+our $VERSION = 'v3.3.2';
 
 sub NamesRgbTable() {
     use integer;
